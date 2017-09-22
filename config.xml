@@ -15,7 +15,7 @@
     
    
     <platform name="ios">
-    	<icon src="www/images/icon-60@3x.png" width="180" height="180" />
+    	<icon src="www/images/icon-60@3x.png"  gap:platform="ios" width="180" height="180" />
     </platform>
     
     <platform name="android">

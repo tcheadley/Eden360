@@ -12,6 +12,9 @@
     <preference name="moca_app_key" value="2G0cuJ2_RPO_a5Wd-n6BTQ" />
     <preference name="moca_app_secret" value="HDIp8IYGmIjcDjRYj6IFv5s0E8E=" />
     <preference name="gcm_sender" value="\ YOUR_GCM_SENDER" />
+    
+    <icon src="icon.png" />
+    
     <platform name="ios">
     	<icon src="www\images\icon-60@3x.png" width="180" height="180" />
     </platform>

@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */; };
+		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
+		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		40A103125D3349EAAD6780DB /* MOCAPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 103DF849BD924C5C98EDA983 /* MOCAPlugin.m */; };
+		2C5366DF73BC4669B8B4B7C6 /* MOCAPluginActionsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC98209AB4CF3B2CA65DD /* MOCAPluginActionsDelegate.m */; };
+		9529892BD02243F1A5421DF0 /* MOCAPluginEventsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C9480D1C1242D9B62CF94B /* MOCAPluginEventsDelegate.m */; };
+		4CAD27D823E944CC95634796 /* MOCAPluginCallbackMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B3479C095476CB1D2B100 /* MOCAPluginCallbackMessage.m */; };
+		5102F3469BBD477DA186F9EF /* MOCAAutoIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ABABFE3D634A42B590462D /* MOCAAutoIntegration.m */; };
+		AC012204250C47EE9A2A5874 /* libMOCALib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A155E60FE24B438BB443FF /* libMOCALib.a */; };
+		84BB2CE6023944B18578561A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5316B14F50244ACBB6E0ABD /* libsqlite3.dylib */; };
+		FBB17F9B587748E1BA1653FB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52999F6CA33E4C4CA84E93F6 /* CFNetwork.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6CB36F4B1DF84A5B9D1FB3E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487D21387CB045C39F1C7E13 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BFD37895DB20417DB0C6045C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617B62B9BBA44CE3ADEC7F96 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		51D8AD156D764C8297658D72 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F073A4ECDF314458BDBE02B6 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		80C887855E54495B8CCA5257 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC766DDDCB8F4E36A14B7319 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CBB65821DE174A68ABC1BB47 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE996405173C476AA12CFB8B /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2EA73F0EFBD04A7290F1EC40 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947F48B51B084D6BA802FC63 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		923FE85BEEED4B4CABF87A0E /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E10C255BCAF43C5B4C61500 /* PassKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D7B7D373026447B4BDE3EE14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F059CD20B90A45CF9AA2AABC /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E614ED2763CF41D487CC0C30 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0764804A8A45B1AE8E3A9D /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "iosEx/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* iosEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iosEx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = cordova/build-debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = cordova/build-release.xcconfig; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* iosEx-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iosEx-Prefix.pch"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "iosEx/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* iosEx-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "iosEx-Info.plist"; path = "iosEx/iosEx-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "iosEx/config.xml"; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		103DF849BD924C5C98EDA983 /* MOCAPlugin.m */ = {isa = PBXFileReference; name = "MOCAPlugin.m"; path = "com.innoquant.moca.phonegap/MOCAPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		CAEBC98209AB4CF3B2CA65DD /* MOCAPluginActionsDelegate.m */ = {isa = PBXFileReference; name = "MOCAPluginActionsDelegate.m"; path = "com.innoquant.moca.phonegap/MOCAPluginActionsDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		94C9480D1C1242D9B62CF94B /* MOCAPluginEventsDelegate.m */ = {isa = PBXFileReference; name = "MOCAPluginEventsDelegate.m"; path = "com.innoquant.moca.phonegap/MOCAPluginEventsDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9B8B3479C095476CB1D2B100 /* MOCAPluginCallbackMessage.m */ = {isa = PBXFileReference; name = "MOCAPluginCallbackMessage.m"; path = "com.innoquant.moca.phonegap/MOCAPluginCallbackMessage.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		31ABABFE3D634A42B590462D /* MOCAAutoIntegration.m */ = {isa = PBXFileReference; name = "MOCAAutoIntegration.m"; path = "com.innoquant.moca.phonegap/MOCAAutoIntegration.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		30A155E60FE24B438BB443FF /* libMOCALib.a */ = {isa = PBXFileReference; name = "libMOCALib.a"; path = "iosEx/Plugins/com.innoquant.moca.phonegap/libMOCALib.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		4D0EF4274C524F2C947AE8A9 /* MOCAPlugin.h */ = {isa = PBXFileReference; name = "MOCAPlugin.h"; path = "com.innoquant.moca.phonegap/MOCAPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6B8362291700491CAD4E9E8A /* MOCAPluginActionsDelegate.h */ = {isa = PBXFileReference; name = "MOCAPluginActionsDelegate.h"; path = "com.innoquant.moca.phonegap/MOCAPluginActionsDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D5799754323442BD8324698F /* MOCAPluginEventsDelegate.h */ = {isa = PBXFileReference; name = "MOCAPluginEventsDelegate.h"; path = "com.innoquant.moca.phonegap/MOCAPluginEventsDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		60B4D11A5AAC4D2DB5DEF4F6 /* MOCAPluginCallbackMessage.h */ = {isa = PBXFileReference; name = "MOCAPluginCallbackMessage.h"; path = "com.innoquant.moca.phonegap/MOCAPluginCallbackMessage.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A3A9DE7B2695449D80005BE0 /* MOCAPluginConstants.h */ = {isa = PBXFileReference; name = "MOCAPluginConstants.h"; path = "com.innoquant.moca.phonegap/MOCAPluginConstants.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1CF7FC9222894145AF6F3C2C /* MOCAAutoIntegration.h */ = {isa = PBXFileReference; name = "MOCAAutoIntegration.h"; path = "com.innoquant.moca.phonegap/MOCAAutoIntegration.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EF2225D2D78C40E2ACF9600B /* MOCA.h */ = {isa = PBXFileReference; name = "MOCA.h"; path = "com.innoquant.moca.phonegap/MOCA.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5068BA94E434433D9E7B3EBA /* MOCAAction.h */ = {isa = PBXFileReference; name = "MOCAAction.h"; path = "com.innoquant.moca.phonegap/MOCAAction.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5B7444F22CEB4E789BBCEF95 /* MOCABeacon.h */ = {isa = PBXFileReference; name = "MOCABeacon.h"; path = "com.innoquant.moca.phonegap/MOCABeacon.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C39499F2F1204C228ECDFBF1 /* MOCAConfig.h */ = {isa = PBXFileReference; name = "MOCAConfig.h"; path = "com.innoquant.moca.phonegap/MOCAConfig.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		34C15D7DA77E4976BB84014E /* MOCAEvent.h */ = {isa = PBXFileReference; name = "MOCAEvent.h"; path = "com.innoquant.moca.phonegap/MOCAEvent.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0215690A8699474C82DFD1B7 /* MOCAInbox.h */ = {isa = PBXFileReference; name = "MOCAInbox.h"; path = "com.innoquant.moca.phonegap/MOCAInbox.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EF34487FE2BE4820A6E90F76 /* MOCAIndoorClient.h */ = {isa = PBXFileReference; name = "MOCAIndoorClient.h"; path = "com.innoquant.moca.phonegap/MOCAIndoorClient.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FF75BC66335441A1B3724C1C /* MOCAInstance.h */ = {isa = PBXFileReference; name = "MOCAInstance.h"; path = "com.innoquant.moca.phonegap/MOCAInstance.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B791A3442F8C44EF895342DE /* MOCALabel.h */ = {isa = PBXFileReference; name = "MOCALabel.h"; path = "com.innoquant.moca.phonegap/MOCALabel.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		46432B9DBA78490D85ABE921 /* MOCALog.h */ = {isa = PBXFileReference; name = "MOCALog.h"; path = "com.innoquant.moca.phonegap/MOCALog.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4FA4BE371A6D4BB1B4D838F0 /* MOCAPlace.h */ = {isa = PBXFileReference; name = "MOCAPlace.h"; path = "com.innoquant.moca.phonegap/MOCAPlace.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		82AB3B20F7F644798B017CC0 /* MOCAPropertyContainer.h */ = {isa = PBXFileReference; name = "MOCAPropertyContainer.h"; path = "com.innoquant.moca.phonegap/MOCAPropertyContainer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		109A4539AA874DBD880A891E /* MOCAProximityDelegate.h */ = {isa = PBXFileReference; name = "MOCAProximityDelegate.h"; path = "com.innoquant.moca.phonegap/MOCAProximityDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		413B798969944BA896391536 /* MOCAProximityService.h */ = {isa = PBXFileReference; name = "MOCAProximityService.h"; path = "com.innoquant.moca.phonegap/MOCAProximityService.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6E7F0CEFE6BF4077BA30561E /* MOCARecoClient.h */ = {isa = PBXFileReference; name = "MOCARecoClient.h"; path = "com.innoquant.moca.phonegap/MOCARecoClient.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		68A69D94961C422EBF775EED /* MOCASegment.h */ = {isa = PBXFileReference; name = "MOCASegment.h"; path = "com.innoquant.moca.phonegap/MOCASegment.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6FF9CECB48254D94AFA3D333 /* MOCASerializable.h */ = {isa = PBXFileReference; name = "MOCASerializable.h"; path = "com.innoquant.moca.phonegap/MOCASerializable.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C8B74641CA5C4A14B7251922 /* MOCAUser.h */ = {isa = PBXFileReference; name = "MOCAUser.h"; path = "com.innoquant.moca.phonegap/MOCAUser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D2C8D0B729994E6689C46951 /* MOCAZone.h */ = {isa = PBXFileReference; name = "MOCAZone.h"; path = "com.innoquant.moca.phonegap/MOCAZone.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A5316B14F50244ACBB6E0ABD /* libsqlite3.dylib */ = {isa = PBXFileReference; name = "libsqlite3.dylib"; path = "usr/lib/libsqlite3.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		52999F6CA33E4C4CA84E93F6 /* CFNetwork.framework */ = {isa = PBXFileReference; name = "CFNetwork.framework"; path = "System/Library/Frameworks/CFNetwork.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		487D21387CB045C39F1C7E13 /* Foundation.framework */ = {isa = PBXFileReference; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		617B62B9BBA44CE3ADEC7F96 /* Security.framework */ = {isa = PBXFileReference; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		F073A4ECDF314458BDBE02B6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		BC766DDDCB8F4E36A14B7319 /* UIKit.framework */ = {isa = PBXFileReference; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		CE996405173C476AA12CFB8B /* CoreTelephony.framework */ = {isa = PBXFileReference; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		947F48B51B084D6BA802FC63 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		2E10C255BCAF43C5B4C61500 /* PassKit.framework */ = {isa = PBXFileReference; name = "PassKit.framework"; path = "System/Library/Frameworks/PassKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		F059CD20B90A45CF9AA2AABC /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		CE0764804A8A45B1AE8E3A9D /* CoreBluetooth.framework */ = {isa = PBXFileReference; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				AC012204250C47EE9A2A5874 /* libMOCALib.a in Frameworks */,
+				84BB2CE6023944B18578561A /* libsqlite3.dylib in Frameworks */,
+				FBB17F9B587748E1BA1653FB /* CFNetwork.framework in Frameworks */,
+				6CB36F4B1DF84A5B9D1FB3E3 /* Foundation.framework in Frameworks */,
+				BFD37895DB20417DB0C6045C /* Security.framework in Frameworks */,
+				51D8AD156D764C8297658D72 /* SystemConfiguration.framework in Frameworks */,
+				80C887855E54495B8CCA5257 /* UIKit.framework in Frameworks */,
+				CBB65821DE174A68ABC1BB47 /* CoreTelephony.framework in Frameworks */,
+				2EA73F0EFBD04A7290F1EC40 /* CoreLocation.framework in Frameworks */,
+				923FE85BEEED4B4CABF87A0E /* PassKit.framework in Frameworks */,
+				D7B7D373026447B4BDE3EE14 /* AudioToolbox.framework in Frameworks */,
+				E614ED2763CF41D487CC0C30 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "iosEx/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* iosEx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* iosEx-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "iosEx";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* iosEx-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+			);
+			name = Resources;
+			path = "iosEx/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30A155E60FE24B438BB443FF /* libMOCALib.a */,
+				A5316B14F50244ACBB6E0ABD /* libsqlite3.dylib */,
+				52999F6CA33E4C4CA84E93F6 /* CFNetwork.framework */,
+				487D21387CB045C39F1C7E13 /* Foundation.framework */,
+				617B62B9BBA44CE3ADEC7F96 /* Security.framework */,
+				F073A4ECDF314458BDBE02B6 /* SystemConfiguration.framework */,
+				BC766DDDCB8F4E36A14B7319 /* UIKit.framework */,
+				CE996405173C476AA12CFB8B /* CoreTelephony.framework */,
+				947F48B51B084D6BA802FC63 /* CoreLocation.framework */,
+				2E10C255BCAF43C5B4C61500 /* PassKit.framework */,
+				F059CD20B90A45CF9AA2AABC /* AudioToolbox.framework */,
+				CE0764804A8A45B1AE8E3A9D /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				103DF849BD924C5C98EDA983 /* MOCAPlugin.m */,
+				CAEBC98209AB4CF3B2CA65DD /* MOCAPluginActionsDelegate.m */,
+				94C9480D1C1242D9B62CF94B /* MOCAPluginEventsDelegate.m */,
+				9B8B3479C095476CB1D2B100 /* MOCAPluginCallbackMessage.m */,
+				31ABABFE3D634A42B590462D /* MOCAAutoIntegration.m */,
+				4D0EF4274C524F2C947AE8A9 /* MOCAPlugin.h */,
+				6B8362291700491CAD4E9E8A /* MOCAPluginActionsDelegate.h */,
+				D5799754323442BD8324698F /* MOCAPluginEventsDelegate.h */,
+				60B4D11A5AAC4D2DB5DEF4F6 /* MOCAPluginCallbackMessage.h */,
+				A3A9DE7B2695449D80005BE0 /* MOCAPluginConstants.h */,
+				1CF7FC9222894145AF6F3C2C /* MOCAAutoIntegration.h */,
+				EF2225D2D78C40E2ACF9600B /* MOCA.h */,
+				5068BA94E434433D9E7B3EBA /* MOCAAction.h */,
+				5B7444F22CEB4E789BBCEF95 /* MOCABeacon.h */,
+				C39499F2F1204C228ECDFBF1 /* MOCAConfig.h */,
+				34C15D7DA77E4976BB84014E /* MOCAEvent.h */,
+				0215690A8699474C82DFD1B7 /* MOCAInbox.h */,
+				EF34487FE2BE4820A6E90F76 /* MOCAIndoorClient.h */,
+				FF75BC66335441A1B3724C1C /* MOCAInstance.h */,
+				B791A3442F8C44EF895342DE /* MOCALabel.h */,
+				46432B9DBA78490D85ABE921 /* MOCALog.h */,
+				4FA4BE371A6D4BB1B4D838F0 /* MOCAPlace.h */,
+				82AB3B20F7F644798B017CC0 /* MOCAPropertyContainer.h */,
+				109A4539AA874DBD880A891E /* MOCAProximityDelegate.h */,
+				413B798969944BA896391536 /* MOCAProximityService.h */,
+				6E7F0CEFE6BF4077BA30561E /* MOCARecoClient.h */,
+				68A69D94961C422EBF775EED /* MOCASegment.h */,
+				6FF9CECB48254D94AFA3D333 /* MOCASerializable.h */,
+				C8B74641CA5C4A14B7251922 /* MOCAUser.h */,
+				D2C8D0B729994E6689C46951 /* MOCAZone.h */,
+			);
+			name = Plugins;
+			path = "iosEx/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* iosEx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iosEx" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "iosEx";
+			productName = "iosEx";
+			productReference = 1D6058910D05DD3D006BFB54 /* iosEx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__NON-CLI__" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* iosEx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				40A103125D3349EAAD6780DB /* MOCAPlugin.m in Sources */,
+				2C5366DF73BC4669B8B4B7C6 /* MOCAPluginActionsDelegate.m in Sources */,
+				9529892BD02243F1A5421DF0 /* MOCAPluginEventsDelegate.m in Sources */,
+				4CAD27D823E944CC95634796 /* MOCAPluginCallbackMessage.m in Sources */,
+				5102F3469BBD477DA186F9EF /* MOCAAutoIntegration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iosEx/iosEx-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "iosEx/iosEx-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "iosEx";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iosEx/Plugins/com.innoquant.moca.phonegap\"",
+				);
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iosEx/iosEx-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "iosEx/iosEx-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "iosEx";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iosEx/Plugins/com.innoquant.moca.phonegap\"",
+				);
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iosEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__NON-CLI__" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,17 @@
+{
+    "name": "com.phonegap.helloworld",
+    "version": "1.0.0",
+    "displayName": "iosEx",
+    "cordova": {
+        "platforms": [
+            "ios"
+        ],
+        "plugins": {
+            "com.innoquant.moca.phonegap": {}
+        }
+    },
+    "dependencies": {
+        "cordova-ios": "~4.4.0",
+        "com.innoquant.moca.phonegap": "https://github.com/mocaplatform/moca-phonegap-sdk.git#:/MOCASDK"
+    }
+}

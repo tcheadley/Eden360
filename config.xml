@@ -16,12 +16,15 @@
     <icon src="icon.png" />
     
     <platform name="ios">
-    	<icon src="www\images\icon-60@3x.png" width="180" height="180" />
+    	<icon src="www/images/icon-60@3x.png" width="180" height="180" />
     </platform>
+    
     <platform name="android">
         <preference name="android-minSdkVersion" value="14" />
         <preference name="android-targetSdkVersion" value="23" />
     </platform>
+    
     <engine name="ios" spec="~4.4.0" />
+    
     <plugin name="com.innoquant.moca.phonegap" spec="https://github.com/mocaplatform/moca-phonegap-sdk.git#:/MOCASDK" />
 </widget>
